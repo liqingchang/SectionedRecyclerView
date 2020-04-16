@@ -20,14 +20,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import butterknife.BindView;
 import com.truizlop.sectionedrecyclerview.SectionedSpanSizeLookup;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind({R.id.recycler}) RecyclerView recycler;
+    @BindView(R.id.recycler) RecyclerView recycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

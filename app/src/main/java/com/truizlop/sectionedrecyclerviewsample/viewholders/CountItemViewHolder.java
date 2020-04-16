@@ -19,9 +19,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import butterknife.BindView;
 import com.truizlop.sectionedrecyclerviewsample.R;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
@@ -29,8 +29,8 @@ import butterknife.ButterKnife;
  */
 public class CountItemViewHolder extends RecyclerView.ViewHolder {
 
-    @Bind({R.id.title}) TextView textView;
-    @Bind({R.id.container}) View containerView;
+    @BindView(R.id.title) TextView textView;
+    @BindView(R.id.container) View containerView;
 
     public CountItemViewHolder(View itemView) {
         super(itemView);

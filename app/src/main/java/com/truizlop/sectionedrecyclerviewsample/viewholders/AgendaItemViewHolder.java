@@ -19,14 +19,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import butterknife.BindView;
 import com.truizlop.sectionedrecyclerviewsample.R;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class AgendaItemViewHolder extends RecyclerView.ViewHolder {
 
-    @Bind({R.id.title}) TextView textView;
+    @BindView(R.id.title) TextView textView;
 
     public AgendaItemViewHolder(View itemView) {
         super(itemView);
